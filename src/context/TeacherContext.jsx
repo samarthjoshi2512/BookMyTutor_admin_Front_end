@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 export const TeacherContext = createContext();
 
 const TeacherContextProvider = (props) => {
-  const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://book-my-tutor-back-end.vercel.app/';
+  const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://book-my-tutor-back-end.vercel.app';
 
   const [tToken, setTToken] = useState(
     localStorage.getItem("tToken") ? localStorage.getItem("tToken") : ""
