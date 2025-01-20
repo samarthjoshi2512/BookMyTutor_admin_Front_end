@@ -10,7 +10,7 @@ const AdminContextProvider = (props) => {
   const [schedules, setSchedules] = useState([])
   const [dashData, setDashData] = useState(false)
 
-  const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://book-my-tutor-back-end.vercel.app/'
+  const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://book-my-tutor-back-end.vercel.app'
 
 
   const getAllTeachers = async () => {
